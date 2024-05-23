@@ -1,0 +1,236 @@
+:root {
+    /*Color principal*/
+    --color-base: #264892;
+    --color-base-trnasparent: rgba(38, 72, 146, 0.8);
+    /*Colore constrastantes*/
+    --color-contrast-4: #0f1226;
+    /*Colores Complementarios*/
+    --color-complementary-5: #52525c;
+    /*Fuente principal*/
+    --font-primary: 'Roboto', sans-serif;
+    /*Colores adicionales*/
+    --color-white: #ffffff;
+    --color-aliceblue: #f0f8ff;
+    --color-whitesmoke: #f5f5f5;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+}
+
+
+
+body {
+    background-color: #264792;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Propiedades del nuevo navbar */
+.nav__container {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-base);
+    border-bottom: 1px solid var(--color-complementary-5);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+    background-color: var(--);
+    height: 5rem;
+    border-radius: 15px;
+    background-color: var(--color-base-trnasparent);
+    border-bottom: 1px solid var(--color-complementary-5);
+    position: fixed;
+    width: 100%;
+}
+
+.nav img {
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.nav a:hover {
+    color: aliceblue;
+    background-color: var(--color-contrast-4);
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    text-align: center;
+    grid-area: navbar;
+    background-color: var(--color-base);
+    margin: 0;
+}
+
+.nav__busqueda-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2rem;
+    background-color: whitesmoke;
+    height: 60%;
+    border-radius: 5rem;
+    border: 1px solid var(--color-complementary-5);
+}
+
+.nav__busqueda-container input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.nav__busqueda-container img {
+    height: 1rem;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+
+/*main*/
+.main section{
+    padding-top: 8rem;
+}
+
+
+
+/* Texto */
+.titulo {
+    color: white;
+    margin: 10px;
+    padding: 5px 5px 5px 5px;
+    background-color: #bf994d;
+}
+
+.subtitulos {
+    text-align: center;
+}
+
+/* Imagenes */
+.logo img {
+    float: left;
+}
+
+.img1 {
+    width: 125px;
+    height: 125px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.integrantes {
+    background-color: burlywood;
+    border: 2px solid #bf994d;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+}
+
+/* Formatos */
+.menu a {
+    color: white;
+    text-decoration: none;
+    background-color: #bf994d;
+}
+
+.menu {
+    border: 2px solid;
+    background: #bf994d;
+    margin: 10px;
+    text-align: center;
+}
+
+.portada {
+    width: 50%;
+}
+
+.movie {
+    background-color: white;
+    border: 2px solid #bf994d;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.foot {
+    background-color: #bf994d;
+    text-align: center;
+    margin: 10px;
+}
+
+mapa {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    background-color: var(--color-base);
+    height: 5rem;
+    border-top: 1px solid var(--color-complementary-5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+.footer__info h3{
+    color: white;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+.footer__info p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+.footer__info :nth-child(2){
+    margin-left: 5rem;
+}
+
+.footer__info :nth-child(3){
+    margin-left: 5rem;
+}
+
+
+.footer__social-media {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.footer__social-media img {
+    height: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
