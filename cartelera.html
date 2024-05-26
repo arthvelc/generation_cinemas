@@ -6,218 +6,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cartelera.css">
     
     <title>Cartelera</title>
     <link rel="icon"
         href="/img/3.png"
         type="img/png">
 
-    <style>
-        body{
-            background-color: #264792;
-        }
-        /*grid de las pelicula*/
-        .titulo{
-            grid-area:titulo;
-        }
-        .portada{
-            grid-area:portada;
-        }
-        .informacion{
-            grid-area:informacion;
-        }
-        .trailer{
-            grid-area:trailer;
-        }
-        .sinopsis{
-            grid-area: sinopsis;
-        }
-        .horarios{
-            grid-area: horarios;
-        }
-        /*RESPONSIVO DE LAS PELICULAS*/
-       /*Vista para el telefono*/
-       .movie{
-            display: grid;
-            gap: 5px;
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "titulo titulo"
-            "portada portada"
-            "informacion horarios" 
-            "sinopsis sinopsis"
-            "trailer trailer";
-        } 
-
-        /*vista para tablet*/
-        @media(min-width:768px){
-            .movie{
-                grid-template-columns: auto;
-                grid-template-areas: 
-                "titulo titulo titulo"
-                "portada informacion horarios"
-                "sinopsis sinopsis sinopsis"
-                "trailer trailer trailer";
-            }
-            .nav{
-                grid-template-columns: auto;
-                grid-template-areas: 
-                "menú barra";
-            }
-        }
-        /*vista para escritorio*/
-        @media(min-width:900px){
-            .movie{
-                gap: 20px;
-                grid-template-columns: auto;
-                grid-template-areas: 
-                "titulo titulo titulo titulo"
-                "portada informacion sinopsis sinopsis"
-                "portada horarios horarios horarios"
-                "trailer trailer trailer trailer";
-            }
-        }
- 
-        /*grid de la página*/
-        .header{
-            grid-area:header;
-            background-color: #264792;
-            font-size: 20px;
-            padding-top: 0px;
-        }
-        .nav{
-            grid-area: nav;
-        }
-        .cards{
-            grid-area:cards;
-        }
-        .footer{
-            color: white;
-            grid-area: footer;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            border-top: 2px solid #bf994d;
-
-        }
-        .grid-container{
-            display: grid;
-            gap: 1px;
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "header header"
-            "nav nav"
-            "cards cards"
-            "footer footer";
-            border-radius: 10px;
-            padding: 10px;
-        }
-        /*Estilo de header*/
-        .header {
-            color: white;
-            margin: 10px;
-            margin-bottom: 0px;
-            padding: 20px;
-            padding-bottom: 0px;
-            line-height: 0.5;
-        }
-
-        /*Estilo de nav*/
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #264792;
-            height: 5rem;
-            border-bottom: 1px solid #bf994d;
-            border-top: 1px solid #bf994d;
-            margin: 10px;
-
-            padding-bottom: 1rem;
-            padding-top: 1rem;
-        }
-        .nav img{
-            height: 4.5rem;
-            margin-left: 2rem;
-        }
-        .nav a{
-            color: white;
-            text-decoration: none;
-            font-size: 1.4rem;
-            margin-left: 1.5rem;
-        }
-        .nav a:hover {
-            color: aliceblue;
-            background: #bf994d;
-            border-radius: 5rem;
-            padding: 1rem;
-        }
-        .nav__busqueda-container{
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            margin-right: 2rem;
-        }
-        .nav__busqueda-container img{
-            height: 1.8rem;
-            margin-left: 1rem;
-        }
-        .nav__busqueda-container{
-            border-radius: 1rem;
-            height: 1.5rem;
-
-        }
-        .barra{
-            border-radius: 1rem;
-            height: 1.5rem;
-        }
-        /*ESTILO A LAS CARDS*/
-        ul {
-            list-style: none;
-        }
-
-        .movie{
-            background-color: white ;
-            padding: 20px;
-            border: 1px solid #bf994d;
-            margin: 10px;
-            border-radius: 10px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-        }
-
-        .portada{
-            width: 75%;
-            border-radius: 1rem;
-        }
-        .video{
-            border-radius: 1rem;
-            width: 100%;
-        }
-
-        .footer img{
-            width: 200px;
-        }
-
-
-    </style>
 
 </head>
 
 <body class="grid-container">
 
-    <header class="header">
-            <h1>Generation Cinema</h1>
-            <h2>Cartelera</h2>
+  <header class="header">
+        <!-- <h1>Generation Cinema <br> <span class="Carte"> Cartelera </span></h1>  
+        -->
     </header>
 
+
     <nav class="nav"> 
-            <img src="./img/img-1.png" alt="Logotipo">
-            <a href="./index.html">Inicio</a>
-            <a href="./cartelera.html">Cartelera</a>
-            <a href="./dulceria.html">Dulcería</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./registro.html">Regístrate</a>  
+            <img src="./img/loguito.png" alt="Logotipo">
+            <div class="as">
+                <a href="./index.html">Inicio</a>
+                <a href="./cartelera.html">Cartelera</a>
+                <a href="./dulceria.html">Dulcería</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./registro.html">Regístrate</a>  
+            </div>
+
 
         <div class="nav__busqueda-container">
             <img src="./img/img-2.png" alt="icono busqueda">
@@ -225,12 +41,24 @@
         </div>
     </nav>
 
+    <section class="imagenes">
+        <img src="https://th.bing.com/th/id/OIP.EtlW9IGnCGQJm8ISOVl5LAAAAA?rs=1&pid=ImgDetMain" alt="Garra de hierro">
+        <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45455-838532-20240313090657.jpg" alt="Mi amigo el roboth">
+        <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45798-521998-20240315092204.jpg">
+        <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45848-607395-20240327084317.jpg" alt="La Quimera Portada">
+        <img src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45846-293117-20240322070713.jpg" alt="Guerra Civil Portada">
+    </section>
+
+
+
     <section class="cards">
         <!--Primer  Pelicula-->
         <div class="movie">
 
-            <h2 class="titulo">Mi amigo robot</h2>
+            <h2 class="titulo">Mi amigo robot</h2> 
             <div class="informacion">
+                <h4>Información</h4>
+                <button>Más Información</button>
                 <ul>
                     <li>Título original: Robot dreams</li>
                     <li>Director: Pablo Berger</li>
@@ -247,6 +75,7 @@
 
             <div class="trailer">
                 <h4>Trailer</h4>
+                <button> Ver trailer</button>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Eo6QSKrHclQ?si=1akKX3AMvilJoAhc"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -271,6 +100,7 @@
                     <button>18:00 hrs</button>
                     <button>20:00 hrs</button>
                 </div>
+                <br>
                 <button>Comprar boletos</button>
             </div>
 
@@ -282,6 +112,8 @@
 
             <h2 class="titulo">Garra de hierro</h2>
             <div class="informacion">
+                <h4>Información</h4>
+                <button>Más Información</button>
                 <ul>
                     <li>Título original: The Iron Claw</li>
                     <li>Actores: Lily James, Zac Efron</li>
@@ -298,6 +130,7 @@
 
             <div class="trailer">
                 <h4>Trailer</h4>
+                <button> Ver trailer</button>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/VGXu4fl3HpQ?si=oze4bCWDXYuRxPes"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -320,6 +153,7 @@
                     <button>18:00 hrs</button>
                     <button>20:00 hrs</button>
                 </div>
+                <br>
                 <button>Comprar boletos</button>
             </div>
         </div>
@@ -329,6 +163,8 @@
 
             <h2 class="titulo">Back to black</h2>
             <div class="informacion">
+                <h4>Información</h4>
+                <button>Más Información</button>
                 <ul>
                     <li>Título original: Back to black</li>
                     <li>Actores: Eddie Marsan, Lesley Manville, JAck O'Connell, Marisa Abela</li>
@@ -345,6 +181,7 @@
 
             <div class="trailer">
                 <h4>Trailer</h4>
+                <button> Ver trailer</button>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/rOC7WOSupq8?si=XQ39EZvihlvtqAAf"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -371,6 +208,7 @@
                     <button>18:00 hrs</button>
                     <button>20:00 hrs</button>
                 </div>
+                <br>
                 <button>Comprar boletos</button>
             </div>
         </div>
@@ -380,6 +218,8 @@
 
             <h2 class="titulo">La Quimera</h2>
             <div class="informacion">
+                <h4>Información</h4>
+                <button>Más Información</button>
                 <ul>
                     <li>Título original: La chimera</li>
                     <li>Actores: Josh O'connor, Isabella Rosellini, Alba Rohrwacher , Vicenzo Nemolato</li>
@@ -397,6 +237,7 @@
 
             <div class="trailer">
                 <h4>Trailer</h4>
+                <button> Ver trailer</button>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/DG0M8vJgltw?si=Kphpxkh3qPJsQQEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
@@ -416,6 +257,7 @@
                     <button>18:00 hrs</button>
                     <button>20:00 hrs</button>
                 </div>
+                <br>
                 <button>Comprar boletos</button>
             </div>
         </div>
@@ -425,6 +267,8 @@
 
             <h2 class="titulo">Guerra Civil</h2>
             <div class="informacion">
+                <h4>Información</h4>
+                <button>Más Información</button>
                 <ul>
                     <li>Título original: Civil war</li>
                     <li>Actores: wagner Moura, Cailee Spaeny, Stephen McKinley Henderson, Kirsten Dunst</li>
@@ -442,6 +286,7 @@
 
             <div class="trailer">
                 <h4>Trailer</h4>
+                <button> Ver trailer</button>
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/hs2I8KZaJ98?si=03loggHitegAFsJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
@@ -462,6 +307,7 @@
                     <button>18:00 hrs</button>
                     <button>20:00 hrs</button>
                 </div>
+                <br>
                 <button>Comprar boletos</button>
             </div>
         </div>
@@ -470,7 +316,7 @@
 
     
     <footer class="footer">
-        <img src="img/3.png" alt="">
+        <img src="img/loguito.png" alt="">
         <h2>Cinema Generation</h2>
         <p>Av. Periférico Norte Manuel Gómez Morín 1695 Col. Rinconada de La Azalea, Belenes Norte, 45150 Zapopan, Jal.</p>
         <p>Todos los derechos reservados ® PFICG | Patronato del Festival Internacional de Cine en Guadalajara | Marca registrada.</p>
