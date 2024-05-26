@@ -135,6 +135,11 @@ html {
     padding-bottom: 0.5rem;
 }
 
+.dulceria-card:hover {
+    transform: rotateY(360deg);
+    transition: transform 2s ease-in-out;
+}
+
 .dulceria-card img {
     width: 100%;
     height: auto;
@@ -212,6 +217,11 @@ html {
     padding: 1rem;
     text-align: center;
 }
+.movie-card:hover {
+    transform: rotateY(360deg);
+    transition: transform 2s ease-in-out;
+}
+
 
 .movie-card img {
     width: 100%;
@@ -254,6 +264,9 @@ html {
     margin: 10px;
     border:1px solid #f0f8ff;
 }
+
+
+
 
 /*Responsivo :)*/
 
