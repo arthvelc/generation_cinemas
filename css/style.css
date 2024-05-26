@@ -104,6 +104,18 @@ html {
     overflow: auto;
 }
 
+.dulceria__title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem;
+    margin-top: -42rem;
+    background-color: var(--color-base);
+    box-shadow: var(--color-contrast-4) 0 0 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 .dulceria-card {
     background-color: whitesmoke;
@@ -113,6 +125,8 @@ html {
     padding: 1rem;
     width: 20rem;
     text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .dulceria-card img {
