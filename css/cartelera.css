@@ -66,6 +66,7 @@ body{
 
 
 
+
 @media(max-width: 767px) {
     .video{
         display: none;
@@ -105,16 +106,18 @@ body{
         padding-right: 20px;
     
     }
-  
-    .nav button{
+
+    .menu{
         color: white;
         display: inline-block;
         margin-right: 3rem;
         background-color: var(--color-base);
         border:none;
         box-shadow: none;
-      
+
     }
+  
+
 }
 
 
@@ -155,6 +158,7 @@ body{
 
     .informacion button{
         display: none;
+        
     }
 
     /*.nav{
@@ -170,7 +174,7 @@ body{
         padding-right: 100px;
     }
 
-    .nav button{
+    .menu{
         display: none;
         color: white;
     }
@@ -228,7 +232,7 @@ body{
 
     }
 
-    .nav button{
+    .menu{
         display: none;
         color: white;
     }
@@ -412,7 +416,7 @@ ul {
     margin: 5px;   
 }
 
-. horarios button:hover{
+.horarios button:hover{
     background-color: #bf994d;
     border: 1px solid #bf994d;
     width: 110px;
@@ -420,4 +424,38 @@ ul {
 
 }
 
+
+.informacion button{
+    color: whitesmoke;
+    background-color: #264892;
+    border-radius: .5rem;
+    height: 35px;
+    width: 95px;
+    margin: 5px;   
+}
+
+.informacion button:hover{
+    background-color: #bf994d;
+    border: 1px solid #bf994d;
+    width: 110px;
+    height: 45px;
+
+}
+
+.trailer button{
+    color: whitesmoke;
+    background-color: #264892;
+    border-radius: .5rem;
+    height: 35px;
+    width: 95px;
+    margin: 5px;   
+}
+
+.trailer button:hover{
+    background-color: #bf994d;
+    border: 1px solid #bf994d;
+    width: 110px;
+    height: 45px;
+
+}
 
