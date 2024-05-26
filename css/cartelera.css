@@ -28,7 +28,6 @@ body{
 /*grid de las pelicula*/
 .titulo{
     grid-area:titulo;
-
     font-size:xx-large;
     font-family: literata;
     color: var(--color-base);
@@ -65,12 +64,25 @@ body{
     "trailer trailer";
 } 
 
+
+
 @media(max-width: 767px) {
     .video{
         display: none;
     }
     .informacion ul{
         display: none;
+    }
+
+    .as {
+        display: none;
+    }
+    
+    .nav__busqueda-container img{
+        display: none;
+    }
+    .barra{
+        display: none
     }
 
     .movie{
@@ -84,15 +96,25 @@ body{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    
 
     .imagenes{
 
-        margin-top: 170px;
+        margin-top: 100px;
         padding-left: 20px;
         padding-right: 20px;
     
     }
-     
+  
+    .nav button{
+        color: white;
+        display: inline-block;
+        margin-right: 3rem;
+        background-color: var(--color-base);
+        border:none;
+        box-shadow: none;
+      
+    }
 }
 
 
@@ -135,19 +157,23 @@ body{
         display: none;
     }
 
-    .nav{
+    /*.nav{
         grid-template-columns: auto;
         grid-template-areas: 
         "navimg nav_a navbq"
         "naving nav_a navbq"
         ;
-    }
+    }*/
     .imagenes{
         margin-top: 120px;
         padding-left: 100px;
         padding-right: 100px;
     }
-     
+
+    .nav button{
+        display: none;
+        color: white;
+    }
 }
 /*vista para escritorio*/
 @media(min-width:900px){
@@ -186,13 +212,13 @@ body{
     }
 
 
-    .nav{
+    /*.nav{
         grid-template-columns: auto;
         grid-template-areas: 
         "navimg nav_a navbq"
         "navimg nav_a navbq"
         ;
-    }
+    }*/
      
     .imagenes{
 
@@ -200,6 +226,11 @@ body{
         padding-left: 100px;
         padding-right: 100px;
 
+    }
+
+    .nav button{
+        display: none;
+        color: white;
     }
 }
 
@@ -245,7 +276,7 @@ body{
     border-top: 2px solid #bf994d;
     background-color: var(--color-base);
 
-    line-height: 50px;
+    line-height: 25px;
 
 }
 .grid-container{
@@ -262,9 +293,6 @@ body{
 
 /*Estilo de nav*/
 .nav {
-
-
-
     display: flex;
     grid-area: nav;
     align-items: center;
@@ -330,14 +358,14 @@ body{
 }
 
 
-.nav{
+/*.nav{
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: 
     "navimg nav_a"
     "navimg navbq"
     ;
-}
+}*/
 
 
 
@@ -364,14 +392,18 @@ ul {
 
 
 .footer img{
-    width: 200px;
+    width: 160px;
+}
+
+.footer{
+    font-size: small ;
 }
 
 .Carte{
     font-size: 25px;
 }
 
-button{
+.horarios button{
     color: whitesmoke;
     background-color: #264892;
     border-radius: .5rem;
@@ -380,7 +412,7 @@ button{
     margin: 5px;   
 }
 
-button:hover{
+. horarios button:hover{
     background-color: #bf994d;
     border: 1px solid #bf994d;
     width: 110px;
