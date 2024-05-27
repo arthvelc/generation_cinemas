@@ -136,8 +136,8 @@ html {
 }
 
 .dulceria-card:hover {
-    transform: rotateY(360deg);
-    transition: transform 2s ease-in-out;
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
 }
 
 .dulceria-card img {
@@ -219,7 +219,7 @@ html {
 }
 .movie-card:hover {
     transform: rotateY(360deg);
-    transition: transform 2s ease-in-out;
+    transition: transform 1.5s ease-in-out;
 }
 
 
