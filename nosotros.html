@@ -3,43 +3,63 @@
     <!--Atributos-->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Nosotros</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Nosotros</title>  
     <!---CSS NOSOTROS-->
     <style>
+*{
+    box-sizing: border-box;
+}
 body {
     background-color: #264792;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /*main*/
 .main section{
     padding-top: 8rem;
+    text-align: justify;
 }
 
 /* Texto */
-.titulo {
+#titulo{
     color: white;
     margin: 10px;
     padding: 5px 5px 5px 5px;
+    
 }
 h1{
             color: chartreuse;
             font-size: 30px;
+            text-align: center;
         }
-.subtitulos {
-    text-align: center;
+h2{
+            color: red;
+            font-size: 25px;
+            text-align: center;
 }
-.parrafo{
+.Atributo{
     margin: 20px;
     font-size: 20px;
+    background-color: burlywood;
+    display: flex;
+    border-radius: 10px;
+}
+.texto{
+    margin: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.texto div{
+    margin: 20px;
+    font-size: 20px;
+    position: relative;
 }
 .mision-vision{
-    position: relative;;
+    position: relative;
     text-align: left;
-    display: flex;
+    flex-wrap: wrap;
 }
 /* Imagenes */
 .logo img {
@@ -54,17 +74,23 @@ h1{
     margin: 10px;
 }
 
-.integrantes {
+.integrantes-container{
     background-color: burlywood;
     border: 2px solid #bf994d;
     border-radius: 10px;
-    margin: 15px;
+    margin: 20px;
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.integrantes-container div{
+    margin: 10px;
+    flex:20%;
+    margin-bottom: auto;
 }
 
 /* Formatos */
-.menu a {
+.menu a{
     color: white;
     text-decoration: none;
     background-color: #bf994d;
@@ -81,23 +107,41 @@ h1{
     width: 50%;
 }
 
-.movie {
-    background-color: white;
-    border: 2px solid #bf994d;
-    border-radius: 8px;
-    margin: 10px;
-}
-
-.foot {
-    background-color: #bf994d;
-    text-align: center;
-    margin: 10px;
+.location{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .mapa {
     display: flex;
     justify-content: center;
     outline: 15px solid lightcoral;
+}
+.footer{
+    margin-top: 10px;
+}   
+    
+/*diseño responsivo*
+tablet*/
+
+@media (max-width: 820px){
+    .integrantes-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .location{
+       width: 75%;
+       margin-bottom: 20px;
+    }
+    .mapa{
+        width:75%;
+    }
+}
+/*Mobile*/
+@media (max-width: 420px){
+    .integrantes-container{
+        grid-template-columns: 1fr;
+    }
 }
     </style>
 </head>
@@ -120,8 +164,8 @@ h1{
 <!--Contenido general-->
 <main class="main">
     <section>
-    <div class="subtitulos"><h1>Acerca de nosotros</h1></div>
-    <div class="parrafo">
+    <div id="titulo"><h1>Acerca de nosotros</h1></div>
+    <div class="texto">
     <p><strong>Empresa líder en entretenimiento, con más de 5 años en el mercado, se encuentra posicionado en el Top 10 de las mejores cadenas cinematográficas del mundo. 
 <br>
 Nuestra misión es dar a nuestros invitados la mejor experiencia de entretenimiento, basada en el esfuerzo, talento y compromiso de todos, generando valor, innovación y mucha diversión. 
@@ -130,37 +174,57 @@ Con la idea de poderle llegar cada vez a más invitados se ha mantenido una expa
 Somos pioneros en proyectar contenido alternativo, en donde los invitados pueden vivir inigualables experiencias en los partidos de la NFL, Ballet, Ópera y otras opciones de entretenimiento. Adicional, ofrecemos contenido vanguardista en Casa de Arte y  funciones CineMá, donde los invitados podrán asistir acompañados de sus bebés a una sala acondicionada especialmente para ellos.</strong></p>
 </div>
     </section>
+    <div class="Atributo">
     <div class="mision-vision">
-        <div class="parrafo">
-        <div class="subtitulos"><h1>Mision</h1></div>
-        <p><strong>Dar a nuestros invitados la mejor experiencia de entretenimiento, basada en el esfuerzo, talento y compromiso de todos, generando valor, innovación y mucha diversión.</strong></p>
+        <div class="texto">
+        <div><h2>Mision</h2></div>
+        <p>Dar a nuestros invitados la mejor experiencia de entretenimiento, basada en el esfuerzo, talento y compromiso de todos, generando valor, innovación y mucha diversión.</p>
     </div>
-    <div class="parrafo">
-        <div class="subtitulos"><h1>Vision</h1></div>
-    <p><strong>Ser la opción de entretenimiento preferida por nuestros invitados en los países en donde operamos; reconocida por la ubicación, diseño y confort de las instalaciones, la calidad y variedad de los productos y servicios que ofrecemos, la continua innovación tecnológica y la satisfacción de todos nuestros invitados.</strong></p>
+    <div class="texto">
+        <div><h2>Vision</h2></div>
+    <p>Ser la opción de entretenimiento preferida por nuestros invitados en los países en donde operamos; reconocida por la ubicación, diseño y confort de las instalaciones, la calidad y variedad de los productos y servicios que ofrecemos, la continua innovación tecnológica y la satisfacción de todos nuestros invitados.</p>
     </div>
-</div>
+    </div>
+    <div class="texto">
+        <div><h2>Valores</h2></div>
+    <ul>
+        <li>Integridad: Actuamos con rectitud, haciendo lo correcto conforme a las normas y reglas de la empresa y del país.</li>
+        <li>Compromiso: Somos ejemplo en todo lo que hacemos. Nos enfocamos en lograr altos estándares de desempeño, demostrando y fomentando una actitud de esfuerzo y responsabilidad</li>
+        <li>Respeto: Damos a las personas un trato digno, cordial y tolerante. Reconocemos en todo momento los derechos, libertades y cualidades inherentes a la condición humana y su dignidad.</li>
+    </ul>
+    </div>
+    </div>
     </main>
-    <div class="subtitulos"><h1> Equipo de trabajo</h1></div><br></div>
-    <div class="integrantes">
+    <div class="equipo"><h1> Equipo de trabajo</h1></div><br></div>
+    <div class="integrantes-container">
+    <div>
     <a href="https://www.linkedin.com/in/andrea-ortizalvarado/" target="_blank"> 
-         <figure><img src="https://media.licdn.com/dms/image/D5603AQFuHFvcaa4hKg/profile-displayphoto-shrink_200_200/0/1712257974910?e=1721260800&v=beta&t=BFgQh8h1GBPP8Z2lM2-t3Pa5fSwMRgywh3gFEyMHBco" class="img1" alt="Andrea Ortiz Alvarado"></a>
+         <figure><img src="./img/andrea.jpg" class="img1" alt="Andrea Ortiz Alvarado"></a>
             <figcaption><h3>Andrea Ortiz Alvarado</h3></figcaption></figure>
-    <a href="https://www.linkedin.com/in/arturo-solares-527821195/" target="_blank"> 
-         <figure><img src="https://media.licdn.com/dms/image/D5635AQHu3Io7j4rXrg/profile-framedphoto-shrink_200_200/0/1703200234718?e=1716883200&v=beta&t=ZPMYpgWnmtqfNENXoNC0vKr3qZsEhMGaQRxjVImrPxc" class="img1" alt="Arturo Solares Velasco"></a>
-            <figcaption><h3>Arturo Solares Velasco</h3></figcaption></figure>
-    <a href="https://www.linkedin.com/in/andrea-ortizalvarado/" target="_blank">
-         <figure><img src="https://i.pinimg.com/originals/cf/d0/e6/cfd0e65ab7aafae09ad428810da84609.jpg" class="img1" alt="Brian Antonio Oseguera Mendoza"></a>
-            <figcaption><h3>Brian Antonio Oseguera Mendoza</h3></figcaption></figure>
-    <a href="https://www.linkedin.com/in/andrea-ortizalvarado/" target="_blank"> 
-        <figure> <img src="https://media.licdn.com/dms/image/D5635AQHu3Io7j4rXrg/profile-framedphoto-shrink_800_800/0/1703200234718?e=1716105600&v=beta&t=A2Zwk70q911rNHQGv5mAXywssxN099BvLpRQzDuSaPY" class="img1" alt="Jesus Riverol"></a>
-            <figcaption><h3>Jesus Riverol</h3></figcaption></figure>
-    <a href="https://www.linkedin.com/in/jose-salazar-perez-1a5828232/" target="_blank"> 
-        <figure> <img src="https://media.licdn.com/dms/image/C5603AQEXs7OaqispVA/profile-displayphoto-shrink_800_800/0/1658778616181?e=1721260800&v=beta&t=lb33JAnse2waJZMggkqzI78FRdueaLecjzW6rlz7wcA" class="img1" alt="Jose Salazar Perez"></a>
-            <figcaption><h3>Jose Salazar Perez</h3></figcaption></figure></div>
     </div>
-    <section>
-        <div class="subtitulos"><h1>Ubicacion</h1></div><br>
+    <div>
+    <a href="https://www.linkedin.com/in/arturo-solares-527821195/" target="_blank"> 
+         <figure><img src="./img/arturo.jpg" class="img1" alt="Arturo Solares Velasco"></a>
+            <figcaption><h3>Arturo Solares Velasco</h3></figcaption></figure>
+    </div>
+    <div>
+    <a href="https://www.linkedin.com/in/andrea-ortizalvarado/" target="_blank">
+         <figure><img src="./img/Brian.jpg" class="img1" alt="Brian Antonio Oseguera Mendoza"></a>
+            <figcaption><h3>Brian Antonio Oseguera Mendoza</h3></figcaption></figure>
+    </div>
+    <div>
+    <a href="https://www.linkedin.com/in/andrea-ortizalvarado/" target="_blank"> 
+        <figure> <img src="./img/avatar1.webp" class="img1" alt="Jesus Riverol"></a>
+            <figcaption><h3>Jesus Riverol</h3></figcaption></figure>
+    </div>
+    <div>
+    <a href="https://www.linkedin.com/in/jose-salazar-perez-1a5828232/" target="_blank"> 
+        <figure> <img src="./img/jose.jpg" class="img1" alt="Jose Salazar Perez"></a>
+            <figcaption><h3>Jose Salazar Perez</h3></figcaption></figure>
+    </div>
+    </div>
+    <section class="location">
+        <div class="ubicación"><h1>Ubicacion</h1></div><br>
         <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.2896905869125!2d-99.06961012580831!3d19.35660524310546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd9a8ce38097%3A0x200bd23101b2b9cb!2sAv%20Venustiano%20Carranza%20157%2C%20Progresista%2C%20Iztapalapa%2C%2009240%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1715278453648!5m2!1sen!2smx" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </section>
 <!--Pie de pagina-->
@@ -171,9 +235,9 @@ Somos pioneros en proyectar contenido alternativo, en donde los invitados pueden
         <p>Contacto: info@cinegeneration.com</p>
     </div>
     <div class="footer__social-media">
-        <a href="#" target="_blank"><img src="./img/img4.png" alt="Facebook"></a>
-        <a href="#" target="_blank"><img src="./img/img5.png" alt="Instagram"></a>
-        <a href="#" target="_blank"><img src="./img/img6.jpg" alt="Twitter"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./img/img4.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./img/img5.png" alt="Instagram"></a>
+        <a href="https://x.com/" target="_blank"><img src="./img/img6.jpg" alt="Twitter"></a>
     </div>
     
 </footer>
