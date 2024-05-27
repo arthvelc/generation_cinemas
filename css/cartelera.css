@@ -412,7 +412,7 @@ ul {
     margin: 5px;   
 }
 
-. horarios button:hover{
+.horarios button:hover{
     background-color: #bf994d;
     border: 1px solid #bf994d;
     width: 110px;
@@ -420,4 +420,38 @@ ul {
 
 }
 
+
+.informacion button{
+    color: whitesmoke;
+    background-color: #264892;
+    border-radius: .5rem;
+    height: 35px;
+    width: 95px;
+    margin: 5px;   
+}
+
+.informacion button:hover{
+    background-color: #bf994d;
+    border: 1px solid #bf994d;
+    width: 110px;
+    height: 45px;
+
+}
+
+.trailer button{
+    color: whitesmoke;
+    background-color: #264892;
+    border-radius: .5rem;
+    height: 35px;
+    width: 95px;
+    margin: 5px;   
+}
+
+.trailer button:hover{
+    background-color: #bf994d;
+    border: 1px solid #bf994d;
+    width: 110px;
+    height: 45px;
+
+}
 
