@@ -161,8 +161,8 @@ body {
 
 .dulceria-card img {
     width: 100%;
-    object-fit: cover; /*Para que la imagen no se deforme*/
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .dulceria-card h3 {
